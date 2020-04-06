@@ -1,0 +1,10 @@
+# Ignore generated files
+target/*
+
+# We're writing a library:
+# The library shouldn't decide about the exact versions of 
+# its dependencies, but let the downstream crate decide.
+Cargo.lock
+
+# Ignore workspace
+contact-tracer-engine.code-workspace

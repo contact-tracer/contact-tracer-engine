@@ -1,0 +1,17 @@
+[package]
+name = "contact-tracer-engine"
+version = "0.0.1"
+authors = ["Aidan Curtis <aamcurtis@googlemail.com>"]
+edition = "2018"
+description= "Privacy-preserving engine for COVID-19 contact tracing apps"
+readme="README.md"
+license-file="LICENSE"
+repository="https://github.com/contact-tracer/contact-tracer-engine"
+
+# We don't want to publish it just yet
+publish=false
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
