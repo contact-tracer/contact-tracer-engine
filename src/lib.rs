@@ -18,7 +18,6 @@ mod tests {
             let mut c_buf = 25;
             println!("{}",rust_wrapper_breadwallet_core::BRBIP38KeyIsValid(&mut c_buf));
             assert_eq!(0,rust_wrapper_breadwallet_core::BRBIP38KeyIsValid(&mut c_buf));
-            //rust_wrapper_breadwallet_core::aidans();
         }
     }
 }
