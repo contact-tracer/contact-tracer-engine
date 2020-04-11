@@ -1,11 +1,11 @@
 
 extern crate chrono;
-extern crate rusqlite;
 
 #[macro_use] extern crate serde_derive;
 
 
 use chrono::{ NaiveDate };
+
 
 // We create a type alias so that we always associate the same types to it
 #[cfg(test)]
@@ -13,8 +13,13 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_record_contact() {
-
+    fn first_test() {
+        unsafe {
+            let mut c_buf = 25;
+            println!("{}",rust_wrapper_breadwallet_core::BRBIP38KeyIsValid(&mut c_buf));
+            assert_eq!(0,rust_wrapper_breadwallet_core::BRBIP38KeyIsValid(&mut c_buf));
+            //rust_wrapper_breadwallet_core::aidans();
+        }
     }
 }
 
